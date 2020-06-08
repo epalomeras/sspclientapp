@@ -1,0 +1,12 @@
+# [START gae_quickstart_yaml]
+runtime: nodejs10
+# [END gae_quickstart_yaml]
+runtime: python27
+api_version: 1
+threadsafe: true
+handlers:
+- url: /
+  static_files:  securing-angular-client/index.html
+  upload:  securing-angular-client/index.html
+- url: /
+  static_dir:  securing-angular-client
